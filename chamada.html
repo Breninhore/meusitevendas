@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Chamada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chamada.css">
+</head>
+<body>
+
+<div class="iphone vibrating" id="tela">
+  <div class="topo">
+    <p class="ligando">Chamada recebida</p>
+    <h2 class="nome">@agente.codee</h2>
+  </div>
+
+  <img src="foto.jpg" class="foto">
+
+  <p class="status" id="status">iPhone</p>
+  <p class="tempo" id="tempo">00:00</p>
+
+  <div class="botoes">
+    <div class="botao recusar">
+      <span>❌</span>
+      <p>Recusar</p>
+    </div>
+
+    <div class="botao atender" onclick="atender()">
+      <span>📞</span>
+      <p>Atender</p>
+    </div>
+  </div>
+</div>
+
+<audio id="audio" src="audio.mp3"></audio>
+<audio id="vibracao" src="vibracao.mp3" loop></audio>
+
+<script src="chamada.js"></script>
+</body>
+</html>
